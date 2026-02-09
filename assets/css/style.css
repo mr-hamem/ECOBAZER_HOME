@@ -1223,6 +1223,7 @@ footer .footer_social_links ul li:hover a{
 /* footer section css ends here */
 /* --------------------------------------------Landing page css ends here -----------------------------------------*/
 /*-------------------------------------------- shop_1 all css starts here ----------------------------------------*/
+/* shop 1 banner section starts here */
 #shop_1_banner{
     background: url(../img/shop_1Banner.png);
     height: 120px;
@@ -1248,4 +1249,204 @@ footer .footer_social_links ul li:hover a{
 #shop_1_banner .shop_1_cnt_wrapper span{
     color: var(--gray-scale-gray-â€“-500);
 }
+/* shop 1 banner section ends here */
+/* shop_1_all_cat section css starts here */
+#shop_1_allCat .heading{
+    border-radius: 43px;
+    padding: 14px 20px;
+    width: 130px;
+    height: 45px;
+    cursor: pointer;
+    background: var(--branding-success);
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-scale-white);
+}
+#shop_1_allCat .heading h5{
+    font-size: 15px;
+}
+#shop_1_allCat .heading span{
+    font-size: 20px;
+}
+#shop_1_allCat .accordion{
+    margin-bottom: 15px;
+}
+#shop_1_allCat .shop_1_topAccordionBody {
+    display: flex;
+    font-size: 16px;
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-300);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#shop_1_allCat .accordion button{
+    background: var(--gray-scale-white);
+    color: var(--gray-scale-gray-â€“-900);
+    font-weight: 600;
+}
+#shop_1_allCat .shop_1_topAccordionBody input{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+#shop_1_allCat .shop_1_topAccordionBody label{
+    cursor: pointer;
+}
+#shop_1_allCat .shop_1_thirdAccordion label{
+    color: var(--gray-scale-gray-â€“-400);
+}
+#shop_1_allCat .shop_1_thirdAccordion label .active{
+    color: var(--branding-warning);
+}
+#shop_1_allCat .shop_1_thirdAccordion .thirdAccordionSelection{
+    display: flex;
+    align-items: center;
+}
+#shop_1_allCat .shop_1_thirdAccordion .thirdAccordionSelection input{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#shop_1_allCat .shop_1_thirdAccordion .thirdAccordionSelection label span{
+    color: var(--gray-scale-gray-â€“-900);
+    margin-left: 10px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags1{
+    display: flex;
+    gap: 8px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags1 button{
+    border: none;
+    background: var(--gray-scale-gray-â€“-100);
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    width: 100%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags2{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags2 button{
+    border: none;
+    background: var(--gray-scale-gray-â€“-100);
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags2 button.btn_1{
+    width: 40%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags2 button.btn_2{
+    width: 40%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags2 button.btn_3{
+    width: 20%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button{
+    border: none;
+    background: var(--gray-scale-gray-â€“-100);
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button.btn_1{
+    width: 20%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button.btn_1{
+    width: 30%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button.btn_1{
+    width: 20%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button.btn_2{
+    width: 35%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags3 button.btn_3{
+    width: 20%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags4{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags4 button{
+    border: none;
+    background: var(--gray-scale-gray-â€“-100);
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags4 button.btn_1{
+    width: 30%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags4 button.btn_2{
+    width: 30%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags4 button.btn_3{
+    width: 35%;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags5{
+    display: flex;
+    gap: 5px;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags5 button{
+    border: none;
+    background: var(--gray-scale-gray-â€“-100);
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8;
+}
+#shop_1_allCat .shop_1_fourthAccordion .tags5 button.btn_1{
+    width: 20%;
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper{
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper:hover{
+    border: 1px solid var(--branding-success-dark);
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper .cnt_wrapper{
+    display: flex;
+    align-items: center;
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper .cnt_wrapper a{
+    color: var(--gray-scale-gray-â€“-700);
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper .cnt_wrapper p{
+    font-weight: 600;
+}
+#shop_1_allCat .shop_1_saleCategory .shop_1_saleCatWrapper .cnt_wrapper .reviews{
+    display: flex;
+    color: var(--branding-warning);
+}
+.shop_1_saleCategory h6{
+    font-size: 20px;
+}
+/* shop_1_all_cat section css ends here */
 /*-------------------------------------------- shop_1 all css ends here ----------------------------------------*/
