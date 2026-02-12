@@ -1448,5 +1448,126 @@ footer .footer_social_links ul li:hover a{
 .shop_1_saleCategory h6{
     font-size: 20px;
 }
+#shop_1_allCat{
+    padding: 10px 0 50px 0;
+}
+.shop_1_saleCategory .featureProductSecondContainer .second_cnt_wrapper{
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.shop_1_rightCard .shop_1_veg_cnt{
+    position: relative;
+}
+.shop_1_rightCard{
+    position: relative;
+    cursor: pointer;
+}
+.shop_1_rightCard .Links{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+#shop_1_allCat .shop_1_rightCard:hover .Links li{
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+.shop_1_rightCard .Links li{
+    transform: translateX(-40px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.shop_1_rightCard .Links li:last-child{
+    transition-delay: .1s;
+}
+.shop_1_rightCard .Links li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(161 161 161 / 30%);
+    backdrop-filter: blur(2px);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.shop_1_rightCard .shop_1_addToCart{
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray-scale-gray-â€“-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.shop_1_rightCard .shop_1_addToCart:hover{
+    background: var(--branding-success);
+    color: white !important;
+}
+.shop_1_rightCard .shop_1_addToCart iconify-icon{
+    font-size: 18px;
+}
+#shop_1_allCat .shop_1_rightCard{
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    border-radius: 8px;
+    
+}
+#shop_1_allCat .shop_1_rightCard .shop_1_veg_cnt{
+    padding: 12px 16px;
+}
+#shop_1_allCat .shop_1_rightCard .shop_1_veg_cnt a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-700);
+}
+#shop_1_allCat .shop_1_rightCard .shop_1_veg_cnt p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-scale-gray-â€“-900);
+}
+#shop_1_allCat .shop_1_rightCard .shop_1_veg_cnt .shop_1_rightSideReviews{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--branding-warning);
+    font-size: 20px;
+}
+.goToNextPrev ul li a{
+    border: none;
+    color: black;
+    transition: .3s;
+}
+.goToNextPrev ul li:hover a{
+    background: var(--branding-success);
+    color: white;
+}
+.goToNextPrev ul li a.prevPageNavigate,
+.goToNextPrev ul li a.nextPageNavigate{
+    background: var(--gray-scale-gray-â€“-100);
+}
+.shop_1_sort{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.shop_1_sort select{
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.totalSearch p span{
+    font-weight: 600;
+}
 /* shop_1_all_cat section css ends here */
 /*-------------------------------------------- shop_1 all css ends here ----------------------------------------*/
