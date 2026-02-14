@@ -57,7 +57,7 @@
                 <div class="row justify-content-between align-items-center pt-3 pb-3">
                     <div class="col-lg-2 col-md-3">
                         <div>
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="index.html">
                                 <img src="./assets/img/Logo.png" alt="LOGO" class="img-fluid mb-1">
                             </a>
                         </div>
@@ -275,12 +275,191 @@
  <section id="shop_1_allCat">
     <div class="container">
         <div class="row">
+            <div class="calltoActToast d-lg-none d-md-none d-sm-block d-block">
+                <div class="toast-container">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small class="text-muted">just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                    See? Just like this.
+                    </div>
+                </div>
+
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small class="text-muted">2 seconds ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                    Heads up, toasts will stack automatically
+                    </div>
+                </div>
+                </div>
+            </div>
             <div class="col-lg-3">
                 <div class="filters">
-                    <div class="heading">
-                        <h5>Filter <span><iconify-icon icon="rivet-icons:filter"></iconify-icon></span></h5>
+                        <button class="filterBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" aria-controls="filterOffcanvas">Filter <span><iconify-icon icon="rivet-icons:filter"></iconify-icon></span></button>
+                        <!-- mobile view offCanvas of filter button starts here -->
+                         <div class="offcanvas shop_1_filterBtnOffcanvas offcanvas-end d-lg-none d-md-block d-sm-block d-block" tabindex="-1" id="filterOffcanvas" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Choose Your Categories</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                               <div class="accordion shop_1_topAccordion d-lg-none d-md-block d-sm-block d-block" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            All Categories
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body shop_1_topAccordionBody">
+                            <div class="accordions_radios">
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="fresh_fruit" type="radio"><label for="fresh_fruit">Fresh Fruit</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="vegetables" type="radio"><label for="vegetables">Vegetables</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="cooking" type="radio"><label for="cooking">Cooking</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="snacks" type="radio"><label for="snacks">Snacks</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="bevarage" type="radio"><label for="bevarage">Bevarage</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="beauty" type="radio"><label for="beauty">Beauty & Health</label>
+                                </div>
+                                <div class="topAccordionSelection">
+                                    <input name="all_cat_selection" id="bakery" type="radio"><label for="bakery">Bread & Bakery</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="accordion shop_1_topAccordion" id="accordionExample">
+                                </div>
+                                <div class="accordion shop_1_scndAccordion d-lg-none d-md-block d-sm-block d-block" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            Price
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion shop_1_thirdAccordion d-lg-none d-md-block d-sm-block d-block" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Ratings
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="thirdAccordionSelection">
+                                                <input name="selectRate" id="fiveStar" type="checkbox"><label for="fiveStar">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon><span>5.0</span>
+                                                </label>
+                                            </div>
+                                            <div class="thirdAccordionSelection">
+                                                <input name="selectRate" id="fourStar" type="checkbox"><label for="fourStar">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon  icon="material-symbols:star"></iconify-icon><span>4.0 & up</span>
+                                                </label>
+                                            </div>
+                                            <div class="thirdAccordionSelection">
+                                                <input name="selectRate" id="threeStar" type="checkbox"><label for="threeStar">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon><span>3.0 & up</span>
+                                                </label>
+                                            </div>
+                                            <div class="thirdAccordionSelection">
+                                                <input name="selectRate" id="twoStar" type="checkbox"><label for="twoStar">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon><span>2.0 & up</span>
+                                                </label>
+                                            </div>
+                                            <div class="thirdAccordionSelection">
+                                                <input name="selectRate" id="oneStar" type="checkbox"><label for="oneStar">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon><span>1.0 & up</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion shop_1_fourthAccordion d-lg-none d-md-block d-sm-block d-block" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            Popular Tags
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="tags1">
+                                                <button>Healthy</button>
+                                                <button>Low Fat</button>
+                                                <button>Vegeterian</button>
+                                            </div>
+                                            <div class="tags2">
+                                                <button class="btn_1">Kids Food</button>
+                                                <button class="btn_2">Vitamins</button>
+                                                <button class="btn_3">Bread</button>
+                                            </div>
+                                            <div class="tags3">
+                                                <button class="btn_1">Meat</button>
+                                                <button class="btn_2">Snacks</button>
+                                                <button class="btn_3">Tiffin</button>
+                                            </div>
+                                            <div class="tags4">
+                                                <button class="btn_1">Lunch</button>
+                                                <button class="btn_2">Dinner</button>
+                                                <button class="btn_3">Breakfast</button>
+                                            </div>
+                                            <div class="tags5">
+                                                <button class="btn_1">Fruit</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile view offCanvas of filter button ends here -->
+                    <div class="accordion shop_1_topAccordion d-lg-block d-md-none d-sm-none d-none" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -316,7 +495,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="accordion shop_1_scndAccordion" id="accordionExample">
+                    <div class="accordion shop_1_scndAccordion d-lg-block d-md-none d-sm-none d-none" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -330,7 +509,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion shop_1_thirdAccordion" id="accordionExample">
+                    <div class="accordion shop_1_thirdAccordion d-lg-block d-md-none d-sm-none d-none" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -388,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion shop_1_fourthAccordion" id="accordionExample">
+                    <div class="accordion shop_1_fourthAccordion d-lg-block d-md-none d-sm-none d-none" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -424,12 +603,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="shop_1_ctaImg mb-lg-2">
+                    <div class="shop_1_ctaImg d-lg-block d-md-none d-sm-none d-none mb-lg-2">
                         <a href="#">
                             <img src="./assets/img/shopCta.png" class="img-fluid" alt="">
                         </a>
                     </div>
-                    <div class="shop_1_saleCategory">
+                    <div class="shop_1_saleCategory d-lg-block d-md-none d-sm-none d-none">
                         <div class="row">
                             <div class="col-lg-12 my-lg-3">
                                 <h6>Sale Products</h6>
@@ -528,12 +707,12 @@
                         </div>
                     </div>
                 </div>
+                    
             </div>
         </div>
-        
         <div class="col-lg-9">
             <div class="row mt-lg-3">
-                <div class="col-lg-6 d-flex justify-content-lg-start">
+                <div class="col-lg-6 d-flex justify-content-lg-start justify-content-end">
                     <div class="shop_1_sort">
                         <p>Sort by:</p>
                         <select>
@@ -543,14 +722,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-lg-end">
+                <div class="col-lg-6 d-flex justify-content-end">
                     <div class="totalSearch">
                         <p><span>52</span> Results Found</p>
                     </div>
                 </div>
             </div>
-        <div class="row mt-5 mb-lg-3">
-            <div class="col-lg-4">
+        <div class="row mt-5 mb-lg-3 mb-md-3">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg1.png" class="img-fluid" alt=""></a>
@@ -577,7 +756,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg2.png" class="img-fluid" alt=""></a>
@@ -604,7 +783,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg3.png" class="img-fluid" alt=""></a>
@@ -632,8 +811,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-lg-3">
-            <div class="col-lg-4">
+        <div class="row mb-lg-3 mb-md-3">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg4.png" class="img-fluid" alt=""></a>
@@ -660,7 +839,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg5.png" class="img-fluid" alt=""></a>
@@ -687,7 +866,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg6.png" class="img-fluid" alt=""></a>
@@ -715,8 +894,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-lg-3">
-            <div class="col-lg-4">
+        <div class="row mb-lg-3 mb-md-3">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg7.png" class="img-fluid" alt=""></a>
@@ -743,7 +922,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg8.png" class="img-fluid" alt=""></a>
@@ -770,7 +949,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg9.png" class="img-fluid" alt=""></a>
@@ -798,8 +977,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-lg-3">
-            <div class="col-lg-4">
+        <div class="row mb-lg-3 mb-md-3">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg10.png" class="img-fluid" alt=""></a>
@@ -826,7 +1005,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg11.png" class="img-fluid" alt=""></a>
@@ -853,7 +1032,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg12.png" class="img-fluid" alt=""></a>
@@ -881,8 +1060,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-lg-3">
-            <div class="col-lg-4">
+        <div class="row mb-lg-3 mb-md-3">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg13.png" class="img-fluid" alt=""></a>
@@ -909,7 +1088,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg14.png" class="img-fluid" alt=""></a>
@@ -936,7 +1115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="shop_1_rightCard">
                         <div class="shop_1_veg_img">
                             <a href="#"><img src="./assets/img/shopVeg15.png" class="img-fluid" alt=""></a>
@@ -967,7 +1146,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 d-flex justify-content-lg-center">
+            <div class="col-lg-12 d-flex justify-content-center">
                 <div class="goToNextPrev">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">

@@ -1251,8 +1251,10 @@ footer .footer_social_links ul li:hover a{
 }
 /* shop 1 banner section ends here */
 /* shop_1_all_cat section css starts here */
-#shop_1_allCat .heading{
+#shop_1_allCat .filterBtn{
     border-radius: 43px;
+    border: none;
+    outline: none;
     padding: 14px 20px;
     width: 130px;
     height: 45px;
@@ -1260,12 +1262,10 @@ footer .footer_social_links ul li:hover a{
     background: var(--branding-success);
     margin: 25px 0;
     display: flex;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     color: var(--gray-scale-white);
-}
-#shop_1_allCat .heading h5{
-    font-size: 15px;
 }
 #shop_1_allCat .heading span{
     font-size: 20px;
@@ -1568,6 +1568,9 @@ footer .footer_social_links ul li:hover a{
 }
 .totalSearch p span{
     font-weight: 600;
+}
+.shop_1_filterBtnOffcanvas{
+    z-index: 999999999999999 !important;
 }
 /* shop_1_all_cat section css ends here */
 /*-------------------------------------------- shop_1 all css ends here ----------------------------------------*/

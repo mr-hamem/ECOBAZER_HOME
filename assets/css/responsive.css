@@ -182,6 +182,12 @@ footer p {
     text-align: center;
     margin-bottom: 20px;
 }
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
+    margin-bottom: 20px;
+}
 }
 /* extra extra small device responsive css ends here */
 /* iPhone6 to iPhone 8 responsive css starts here*/
@@ -324,6 +330,12 @@ footer .download_apps a {
 footer p {
     font-size: 13px;
     text-align: center;
+    margin-bottom: 20px;
+}
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
     margin-bottom: 20px;
 }
 }
@@ -478,6 +490,15 @@ footer p {
     text-align: center;
     margin-bottom: 20px;
 }
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
+    margin-bottom: 20px;
+}
+#shop_1_allCat .shop_1_veg_img img{
+    width: 100%;
+}
 }
 /* iPhone11 to iPhone14 pro responsive css ends here */
 /* iPhone11pro-max to 17pro-max devices responsive starts here */
@@ -628,6 +649,15 @@ footer p {
     font-size: 13px;
     text-align: center;
     margin-bottom: 20px;
+}
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
+    margin-bottom: 20px;
+}
+#shop_1_allCat .shop_1_veg_img img{
+    width: 100%;
 }
 }
 /* iPhone 11pro-max to 17 promax-devices responsive ends here */
@@ -790,6 +820,15 @@ footer p {
     text-align: center;
     margin-bottom: 20px;
 }
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
+    margin-bottom: 20px;
+}
+#shop_1_allCat .shop_1_veg_img img{
+    width: 100%;
+}
 }
 /* others extra small device responsive css ends here*/
 /* small device responsive css starts here*/
@@ -936,6 +975,15 @@ footer p {
     font-size: 13px;
     text-align: center;
     margin-bottom: 20px;
+}
+.shop_1_sort select {
+    width: 95px;
+}
+#shop_1_allCat .shop_1_rightCard {
+    margin-bottom: 20px;
+}
+#shop_1_allCat .shop_1_veg_img img{
+    width: 100%;
 }
 }
 /* small device responsive css ends here*/

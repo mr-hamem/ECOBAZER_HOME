@@ -165,3 +165,4 @@ window.onload = () => {
   }, 400);
 };
 // preloader section js ends here (1)
+
