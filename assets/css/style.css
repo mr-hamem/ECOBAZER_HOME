@@ -1574,3 +1574,377 @@ footer .footer_social_links ul li:hover a{
 }
 /* shop_1_all_cat section css ends here */
 /*-------------------------------------------- shop_1 all css ends here ----------------------------------------*/
+/*--------------------------------------- products details description page css starts here--------------------- */
+.product-gallery {
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+}
+.slider-nav {
+    width: 25%;
+    margin-right: 15px;
+}
+.slider-nav .productsThumb {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.slider-nav img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.slider-nav .slick-current .productsThumb {
+    border: 2px solid #55a630;
+}
+.slider-for {
+    width: 75%;
+}
+.slider-for img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.slider-nav .slick-dots {
+    display: none !important;
+}
+.slider-nav .slick-prev, .slider-nav .slick-next {
+    left: 40%;
+    z-index: 10;
+}
+.slider-nav .slick-prev {
+     top: -10px; 
+    }
+.slider-nav .slick-next { 
+    bottom: -10px; top: auto; 
+}
+#products_details .products_description{
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+    padding-bottom: 20px;
+}
+#products_details h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+    display: inline-block;
+}
+#products_details span.stocks{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-success-dark);
+    background: var(--branding-success-bright);
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 71px;
+    height: 29px;
+    transform: translateY(50px);
+}
+#products_details .ratings_stocks p{
+    display: inline;
+    color: var(--gray-scale-gray-â€“-600);
+}
+#products_details .ratings_stocks{
+    display: flex;
+    margin: 20px 0;
+}
+#products_details .products_rating_stars{
+    color: var(--branding-warning);
+}
+#products_details .ratings_stocks h5{
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+#products_details .ratings_stocks h5 span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-600);
+}
+#products_details .price_discount del{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-300);
+    margin-right: 5px;
+}
+#products_details .price_discount ins{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--branding-success-dark);
+}
+.price_discount span{
+    border-radius: 30px;
+    padding: 3px 10px;
+    width: 74px;
+    height: 27px;
+    background:rgba(234, 75, 72, 0.1);
+    color: red;
+    margin-left: 10px;
+}
+#products_details .sharing_link{
+    display: flex;
+}
+#products_details .sharing_link ul{
+    display: flex;
+    gap: 10px;
+}
+#products_details .sharing_link ul li a{
+    font-size: 20px;
+    color: var(--gray-scale-gray-â€“-600);
+    transition: .2s;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+}
+#products_details .sharing_link ul li:hover a{
+    background:var(--branding-success);
+    color: white;
+}
+#products_details .product_paragraph p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4d4d4d;
+    word-spacing: 10px;
+    margin: 20px 0;
+}
+#products_details .increase_decrease_btn{
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+#products_details .increase_decrease_btn input{
+    width: 30px;
+    border: none;
+    text-align: center;
+}
+#products_details .increase_decrease_btn button{
+    background: var(--gray-scale-gray-â€“-50);
+    border: none;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 26px;
+    line-height: 30px;
+}
+#products_details .productDescription_addTocart a{
+    background: var(--branding-success);
+    display: block;
+    padding: 13px 0;
+    color: var(--gray-scale-white);
+    border-radius: 10px;
+}
+#products_details .proDesWishlist span{
+    color: var(--branding-success-dark);
+    background: rgb(193, 243, 204);
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.place_order{
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+    border-top: 1px solid var(--gray-scale-gray-â€“-100);
+    padding: 15px 0;
+}
+.other_summary p{
+    display:inline;
+}
+.other_summary span{
+    background: var(--branding-success);
+    color: var(--gray-scale-white);
+    border-radius: 50%;
+    line-height: 25px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.deliverySectionPreview{
+    position: relative;
+    margin-top: 20px;
+}
+.deliverySectionPreview span{
+    color: var(--gray-scale-white);
+    background: var(--branding-success);
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    top: 50%;
+    left: 46%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#proSum .nav_tab button{
+    color: var(--gray-scale-gray-â€“-500);
+}
+.productsPageDiscount span{
+    color: var(--branding-success);
+}
+.productsPageDiscount_wrapper{
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    border-radius: 10px;
+    padding: 8px 0;
+}
+/*--------------------------------------- products details description page css ends here--------------------- */
+/*---------------------------------------------------login page css starts here---------------------------------------------------*/
+.login-box {
+    margin: 30px 0 30px 0;
+border: 1px solid var(--gray-scale-gray-–-50);
+border-radius: 8px;
+padding: 24px 24px 32px;
+width: 520px;
+box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+background: var(--gray-scale-white);
+}
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.input-group input:focus {
+    outline: none;
+    border-color: var(--branding-success-dark);
+}
+.password-group {
+    position: relative;
+}
+.eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.forgetPass{
+    color: var(--gray-scale-gray-–-900);
+    margin-left: 196px;
+}
+.forgetPass, .remember{
+    margin-bottom: 20px;
+}
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: var(--branding-success);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover {
+    background: var(--branding-success);
+}
+.register-text {
+    margin-top: 18px;
+    color: var(--gray-scale-gray-–-900);
+    font-size: 14px;
+}
+
+/*  sign in end*/
+/*  sign up start*/
+.form-wrapper {
+    max-width: 520px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+.card {
+ box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+background: var(--gray-scale-white);
+border: 1px solid var(--gray-scale-gray-–-50);
+border-radius: 8px;
+padding: 24px 24px 32px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+.input-group input:focus {
+  border-color: #22c55e;
+}
+.password-box .eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.6;
+}
+.terms {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #555;
+}
+.terms input {
+  margin-right: 5px;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: var(--branding-success);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: var(--branding-success-dark);
+}
+.login-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+.login-text a {
+  color: var(--gray-scale-gray-–-600);
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-text b{
+font-weight: 600;
+color: var(--gray-scale-gray-–-900);
+}
+/*---------------------------------------------------login page css ends here---------------------------------------------------*/

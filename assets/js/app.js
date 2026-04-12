@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // banner slider slick js starts here
   $('.banner_slider').slick({
     slidesToScroll: 1,
@@ -151,18 +152,36 @@ $(document).ready(function () {
     navKeyboard: false,
     navTouch: false,
   });
+  $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
 });
-let addToWishBtn = document.querySelector(`.wishList`);
-function addToWishList() { 
-  addToWishBtn.innerHTML = `<iconify-icon icon="mdi:tick"></iconify-icon>`;
-}
-addToWishBtn.addEventListener('click', addToWishList)
-// preloader section js starts here (1)
-window.onload = () => {
-  document.querySelector('.preloader').style.opacity = '0';
-  setTimeout(() => {
-    document.querySelector('.preloader').remove();
-  }, 400);
-};
-// preloader section js ends here (1)
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: true,
+    vertical: true,
+    verticalSwiping: true,
+    centerMode: false,
+    focusOnSelect: true
+});
+});
+// // preloader section js starts here (1)
+// window.onload = () => {
+//   document.querySelector('.preloader').style.opacity = '0';
+//   setTimeout(() => {
+//     document.querySelector('.preloader').remove();
+//   }, 400);
+// };
+// // preloader section js ends here (1)
+// products view slick slider starts here
 
+// products view slick slider ends here
+// product page increment and decrement button js starts here
+
+// product page increment and decrement button js ends here

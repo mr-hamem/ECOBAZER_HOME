@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EcoBazer</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- slick slider css file -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <!-- venobox css file -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css">
+    <!-- bootstrap minified bundle css file -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- favicon image here -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <!-- our own style file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- our own responsive style file -->
+    <link rel='stylesheet' href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- header from home page section starts here -->
+    <header id="header">
+        <div class="headerTop">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-6 col-md-6 d-flex align-items-center justify-content-md-start justify-content-lg-start justify-content-center text-center text-lg-start">
+                        <address><iconify-icon icon="tdesign:location" width="20" height="20"></iconify-icon> Store
+                            Location: Lincoln- 344, Illinois, Chicago, USA</address>
+                    </div>
+                    <div class="col-lg-6 col-md-6 d-none d-md-flex d-lg-flex justify-content-end">
+                        <form>
+                            <select>
+                                <option value="">EN</option>
+                                <option value="">BN</option>
+                            </select>
+                            <select>
+                                <option value="">USD</option>
+                                <option value="">BDT</option>
+                            </select>
+                            <a href="register.html">Sign Up</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbl_header d-block d-sm-block d-lg-none">
+            <div class="container">
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <button class="mblMenuBtn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample"><iconify-icon icon="jam:menu" width="30"
+                                height="30"></iconify-icon></button>
+                    </div>
+                    <div class="col-5">
+                        <a href="index.html"><img src="./assets/img/Logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col">
+                        <div class="cart_part d-flex justify-content-end align-items-center">
+                            <button class="mblMenuSearch" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><iconify-icon
+                                    icon="iconamoon:search-thin" width='29' height="29"></iconify-icon></button>
+                            <div class='d-flex'>
+                                <div class="cartCount">
+                                    <button class="cart_bag ps-1 type=" button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon
+                                            icon="iconamoon:shopping-bag-light" width="29"
+                                            height="29"></iconify-icon></button>
+                                    <div class="count">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main offcanvas content starts here -->
+            <div class="offcanvas offcanvas-start offCanvas" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <a href="index.html"><img src="./assets/img/Logo.png" alt="LOGO" class="img-fluid"></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control search_bar" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn navSubBtn btn-outline-success" type="submit"><iconify-icon
+                                icon="iconamoon:search-thin" width="24" height="24"></iconify-icon></button>
+                    </form>
+                    <div class="mblSideBar">
+                        <ul class="navbar-nav">
+                            <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-items"><a href="shop_1.html" class="nav-link">Shops</a></li>
+                            <li class="nav-items"><a href="#" class="nav-link">Pages</a></li>
+                            <li class="nav-items"><a href="#" class="nav-link">About</a></li>
+                            <li class="nav-items"><a href="#" class="nav-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main offcanvas content ends here -->
+            <!-- mobile view search offcanvas content starts here -->
+            <div class="offcanvas offcanvas-bottom searchOffcanvas" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <form class="d-flex" role="search">
+                        <input class="form-control search_bar" type="search" placeholder="Search for the products"
+                            aria-label="Search" />
+                    </form>
+                    <p>Start typing to see the products you're looking for.</p>
+                </div>
+            </div>
+            <!-- mobile view search offcanvas content ends here -->
+            <!-- from mobile view cart offcanvas starts here -->
+            <div class="offcanvas offcanvas-end cartOffCanvas" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header offcanvas_header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body cartBodyOffCanvas">
+                    <h4>Your cart is empty :(</h4>
+                    <span><iconify-icon icon="tdesign:cart"></iconify-icon></span>
+                    <div>
+                        <h6><span>Description:</span> All add to cart items will be listed here .</h6>
+                        <a href="index.html">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+            <!-- from mobile view cart offcanvas ends here -->
+        </div>
+        <div class="mblMenu d-block d-sm-block d-md-none d-lg-none">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><iconify-icon icon="iconoir:shop"></iconify-icon><span>Shop</span></a></li>
+                    <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon><span>Wishlist</span></a>
+                    </li>
+                    <li><a href="#"><iconify-icon icon="weui:setting-outlined"></iconify-icon><span>Settings</span></a>
+                    </li>
+                    <li><a data-bs-toggle="offcanvas" href="#mobileProfileOffcan" role="button"
+                            aria-controls="mobileProfileOffcan"><iconify-icon
+                                icon="iconamoon:profile-thin"></iconify-icon><span>Profile</span></a></li>
+                </ul>
+                <!-- profile offcanvas starts here -->
+                <div class="offcanvas offcanvas-end profileOffCanvas" tabindex="-1" id="mobileProfileOffcan"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">SIGN IN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form>
+                            <label>Username or email addess <span>*</span></label>
+                            <input class="mainAndPass" type="email">
+                        </form>
+                        <form>
+                            <label>Password <span>*</span></label>
+                            <input class="mainAndPass" type="password">
+                            <a href="#">LOG IN</a>
+                            <input id="rememberme" class="rememberMeCheck" type="checkbox">
+                            <label for="rememberme">Remember Me</label>
+                            <a href="#" class="lost_password_link">Lost your password?</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- profile offcanvas ends here -->
+            </div>
+        </div>
+    </header>
+    <!-- header from home page section ends here -->
+
+<section id="login">
+    <div class="container">
+        <div class="row align-itme-center justify-content-center">
+            <div class="login-box">
+    <h2>Sign In</h2>
+
+    <form>
+        <div class="input-group">
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="input-group password-group">
+            <input type="password" placeholder="Password">
+            <iconify-icon class="eye" icon="iconoir:eye" width="24" height="24"></iconify-icon>
+        </div>
+            <label>
+                <input class="remember text-start" type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgetPass text-end">Forget Password</a>
+
+        <button class="login-btn">Login</button>
+
+        <p class="login-text text-center"><a href="register.html">
+        Don’t have account? <b>  Register </b></a>
+      </p>
+    </form>
+</div>
+        </div>
+    </div>
+</section>
+
+    <!-- footer section starts here -->
+    <footer>
+        <div class="container">
+            <div class="row pb-lg-5">
+                <div class="col-lg-3">
+                    <div class="description">
+                        <h5>About Shopery</h5>
+                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                            congue nec.</p>
+                        <a class="supportNumberMail" href="callto:(219) 555-0114">(219) 555-0114</a>
+                        <span>or</span>
+                        <a class="supportNumberMail" href="mailto:proxy@gmail.com">proxy@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="my_account">
+                        <h5>My Account</h5>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Setting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="helps">
+                        <h5>Help</h5>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="proxy">
+                        <h5>Proxy</h5>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="index.html">Shop</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Products Details</a></li>
+                            <li><a href="#">Track Order</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="download_apps">
+                        <h5>Download Our Mobile App</h5>
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6 col-6">
+                                <div class="appstore">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-3">
+                                            <span class="apps_logo"><iconify-icon
+                                                    icon="ic:baseline-apple"></iconify-icon></span>
+                                        </div>
+                                        <div class="col-lg-9 col-9">
+                                            <a href="#">
+                                                Download on the <span>App Store</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="playstore">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-3">
+                                            <span class="apps_logo"><iconify-icon
+                                                    icon="mage:playstore"></iconify-icon></span>
+                                        </div>
+                                        <div class="col-lg-9 col-9">
+                                            <a href="#">
+                                                Download on the <span>Play Store</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-lg-between copyright">
+                <div class="col-lg-3">
+                    <div class="footer_social_links">
+                        <ul>
+                            <li><a href="#"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a></li>
+                            <li><a href="#"><iconify-icon icon="mynaui:twitter"></iconify-icon></a></li>
+                            <li><a href="#"><iconify-icon icon="mingcute:pinterest-line"></iconify-icon></a></li>
+                            <li><a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-lg-flex justify-content-lg-center">
+                    <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 d-lg-flex justify-content-lg-end">
+                    <img src="./assets/img/Payment Method.png" class="img-fluid payment_img" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here -->
+    <!-- latest jquery file 2026 -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <!-- slick slider js file -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- venobox js file -->
+    <script src="./assets/js/venobox.min.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- countdown js file -->
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <!-- iconify web-link script -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <!-- our own js file -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
