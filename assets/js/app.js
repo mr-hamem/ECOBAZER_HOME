@@ -213,17 +213,14 @@ document.addEventListener('DOMContentLoaded', () => {
       couponForm.reset();
     });
   }
-  // preloader section js starts here (1)
-  window.onload = () => {
-    const preloader = document.querySelector('.preloader');
-
-    if (preloader) {
-      preloader.style.opacity = '0';
-
-      setTimeout(() => {
-        preloader.remove();
-      }, 400);
-    }
-  };
-  // preloader section js ends here (1)
-}); // Close DOMContentLoaded callback
+  // preloader js starts here
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.opacity = "0";
+  
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500);
+});
+});
