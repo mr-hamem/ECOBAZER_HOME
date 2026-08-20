@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Details Description</title>
+    <title>Ecobazar - Blog</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,12 @@
 </head>
 
 <body>
-    <!-- header from home page section starts here -->
+    <!-- preloader starts here -->
+     <div class="preloader">
+        
+     </div>
+    <!-- preloader ends here -->
+    <!-- header section starts here -->
     <header id="header">
         <div class="headerTop">
             <div class="container">
@@ -72,17 +78,19 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="cart_part d-flex justify-content-md-end">
-                            <span class="heart"><iconify-icon icon="solar:heart-linear" width="30"
+                            <a href="./wishlist.html" class="text-black-50 pt-1">
+                                <span class="heart"><iconify-icon icon="solar:heart-linear" width="30"
                                     height="30"></iconify-icon></span>
+                            </a>
                             <div class='d-flex'>
                                 <div class="cartCount">
-                                    <span class="cart_bag"><iconify-icon icon="iconamoon:shopping-bag-light" width="29"
-                                            height="29"></iconify-icon></span>
+                                    <a href="./shopping-cart.html" class="text-black-50"><span class="cart_bag"><iconify-icon icon="iconamoon:shopping-bag-light" width="29"
+                                            height="29"></iconify-icon></span></a>
                                     <div class="count">
                                         2
                                     </div>
                                 </div>
-                                <div>
+                                <div class="totalCost">
                                     <p>Shopping Cost:</p>
                                     <h6>$56.00</h6>
                                 </div>
@@ -109,7 +117,7 @@
                                             height="18"></iconify-icon></span></a>
                                 <ul class="submenu">
                                     <li><a href="#" class="nav-link">Fresh Fruit</a></li>
-                                    <li><a href="#" class="nav-link">Vegetables</a></li>
+                                    <li><a href="./shop_1.html" class="nav-link">Vegetables</a></li>
                                     <li><a href="#" class="nav-link">Cooking</a></li>
                                     <li><a href="#" class="nav-link">Snacks</a></li>
                                     <li><a href="#" class="nav-link">Bevarage</a></li>
@@ -136,13 +144,10 @@
                                 <a class="nav-link active" aria-current="page" href="#">Pages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Conact Us</a>
+                                <a class="nav-link active" aria-current="page" href="./contact-us.html">Contact Us</a>
                             </li>
                         </ul>
                         <div class="tel">
@@ -202,8 +207,8 @@
                             <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
                             <li class="nav-items"><a href="shop_1.html" class="nav-link">Shops</a></li>
                             <li class="nav-items"><a href="#" class="nav-link">Pages</a></li>
-                            <li class="nav-items"><a href="#" class="nav-link">About</a></li>
-                            <li class="nav-items"><a href="#" class="nav-link">Contact Us</a></li>
+                            <li class="nav-items"><a href="./about.html" class="nav-link">About</a></li>
+                            <li class="nav-items"><a href="./contact-us.html" class="nav-link">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -281,193 +286,255 @@
             </div>
         </div>
     </header>
-    <!-- header from home page section ends here -->
-    <main>
-        <!-- shop 1 banner + cabbage title addition section starts here -->
-        <section id="shop_1_banner">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-lg-12 shop_1_cnt_wrapper">
-                        <div class="shop_1_bannerCnt">
-                            <a href="index.html"><iconify-icon icon="material-symbols-light:home-outline-rounded"
-                                    width="24" height="24"></iconify-icon></a>
-                            <span><iconify-icon icon="material-symbols-light:chevron-right"></iconify-icon></span>
-                            <a href="#">Categories</a>
-                            <span><iconify-icon icon="material-symbols-light:chevron-right"></iconify-icon></span>
-                            <a href="shop_1.html">Vegetables</a>
-                            <span><iconify-icon icon="material-symbols-light:chevron-right"></iconify-icon></span>
-                            <a href="#">Cabbage</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- header section ends here -->
+
+<main>
+    <!-- Header Breadcrumb -->
+    <div class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#"><i class="fa-solid fa-house"></i></a> 
+                <span>/</span> 
+                <a href="#">Blog</a>
+                <span>/</span>
+                <span class="active">Single Blog</span>
             </div>
-        </section>
-        <!-- shop 1 banner + cabbage title addition section ends here -->
-        <!-- Products descriptoin details section starts here -->
-        <section id="products_details">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="product-gallery">
-                            <div class="slider-nav">
-                                <div class="productsThumb"><img src="./assets/img/smallestProImg.png"></div>
-                                <div class="productsThumb"><img src="./assets/img/smallestProImg 2.png"></div>
-                                <div class="productsThumb"><img src="./assets/img/smallestProImg 3.png"></div>
-                                <div class="productsThumb"><img src="./assets/img/smallestProImg 4.png"></div>
-                            </div>
-                            <div class="slider-for">
-                                <div class="mainImgThumb"><img src="./assets/img/featureProduct2.png"></div>
-                                <div class="mainImgThumb"><img src="./assets/img/smallestProImg 2.png"></div>
-                                <div class="mainImgThumb"><img src="./assets/img/smallestProImg 3.png"></div>
-                                <div class="mainImgThumb"><img src="./assets/img/smallestProImg 4.png"></div>
-                            </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="col-lg-12">
-                            <div class="products_description">
-                                <div class="stocks_heading">
-                                    <h2>Chiness Cabbage</h2><span class="stocks">in stock</span>
-                                </div>
-                                <div class="ratings_stocks">
-                                    <div class="products_rating_stars">
-                                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                        <p>4 Reviews</p>
-                                    </div>
-                                    <h5>SKU: <span>2,58,789</span></h5>
-                                </div>
-                                <div class="price_discount">
-                                    <del>$48.00</del><ins>$17.28</ins>
-                                    <span>64% Off</span>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4 mb-2">
-                            <div class="col-lg-6 col-12">
-                                <div class="brand_img d-flex justify-content-center align-items-center">
-                                    <span>Brand: </span>
-                                    <img src="./assets/img/productBrand.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <div class="sharing_link d-flex justify-content-center align-items-center">
-                                    <span>Share Item: </span>
-                                    <ul>
-                                        <li><a href="#"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a></li>
-                                        <li><a href="#"><iconify-icon icon="mynaui:twitter"></iconify-icon></a></li>
-                                        <li><a href="#"><iconify-icon icon="mingcute:pinterest-line"></iconify-icon></a></li>
-                                        <li><a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-11 product_paragraph">
-                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar. </p>
-                            </div>
-                        </div>
-                        <div class="row place_order">
-                            <div class="col-lg-3 col-4">
-                                <div class="increase_decrease_btn">
-                                    <button class="productDescription_decrement">-</button>
-                                    <input type="number" value="1">
-                                    <button class="productDescription_increment">+</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-5 productDescription_addTocart">
-                                <a href="#" class="text-center">Add to Cart</a>
-                            </div>
-                            <div class="col-lg-1 col-1">
-                                <div class="proDesWishlist">
-                                    <span><iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Products descriptoin details section ends here -->
-        <!-- Products summary section starts here -->
-         <section id="proSum">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="nav_tab">
-  <div class="nav d-flex justify-content-center nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Additional Information</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Customers Feedback</button>
-  </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-    <div class="row">
-        <div class="col-lg-6">
-            <p class="my-3">Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit.
-            Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.</p>
-            <div class="other_summary">
-                <div class="mb-3">
-                    <span><iconify-icon icon="mdi:tick" width="25" height="25"></iconify-icon></span><p>100 g of fresh leaves provides</p>
-                </div>
-                <div class="mb-3">
-                    <span><iconify-icon icon="mdi:tick" width="25" height="25"></iconify-icon></span><p>100 g of fresh leaves provides</p>
-                </div>
-                <div class="mb-3">
-                    <span><iconify-icon icon="mdi:tick" width="25" height="25"></iconify-icon></span><p>100 g of fresh leaves provides</p>
-                </div>
-                <div class="mb-3">
-                    <span><iconify-icon icon="mdi:tick" width="25" height="25"></iconify-icon></span><p>100 g of fresh leaves provides</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="deliverySectionPreview">
-                <img src="./assets/img/delivery.png" class="img-fluid" alt="">
-                <span><iconify-icon icon="iconoir:play-solid" width="50" height="50"></iconify-icon></span>
-            </div>
-            <div class="row mt-4 productsPageDiscount_wrapper">
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="productsPageDiscount col-lg-2 col-sm-2 d-flex align-items-center justify-content-center">
-                                <span><iconify-icon icon="ic:baseline-discount" width="24" height="24"></iconify-icon></span>
-                            </div>
-                            <div class="col-lg-10 col-sm-10 text-center text-lg-start">
-                                <h5>64% Discount</h5>
-                                <p>Save your 64% money with us</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="productsPageDiscount col-lg-2 col-sm-2 d-flex align-items-center justify-content-center">
-                                <span><iconify-icon icon="ic:baseline-discount" width="24" height="24"></iconify-icon></span>
-                            </div>
-                            <div class="col-lg-10 col-sm-10 text-center text-lg-start">
-                                <h5>64% Discount</h5>
-                                <p>Save your 64% money with us</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
         </div>
     </div>
-  </div>
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-</div>
+
+    <!-- Main Content Grid -->
+    <section class="blog-details-section section-padding">
+        <div class="container blog-grid">
+            
+            <!-- Left Article Details Area -->
+            <article class="article-content">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=1000&q=80" alt="Fresh Oranges">
+                </div>
+
+                <div class="meta-bar">
+                    <span><i class="fa-solid fa-tag"></i> Food</span>
+                    <span><i class="fa-regular fa-user"></i> By Admin</span>
+                    <span><i class="fa-regular fa-comment"></i> 65 Comments</span>
+                </div>
+
+                <h1 class="blog-title">Maecenas tempor urna sed quam mollis, a placerat dui fringilla Suspendisse.</h1>
+
+                <div class="author-row">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Cameron Williamson">
+                        <div>
+                            <strong>Cameron Williamson</strong>
+                            <p>4 Apr, 2021 • 6 min read</p>
+                        </div>
+                    </div>
+                    <div class="share-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-            </div>
-         </section>
-        <!-- Products summary section ends here -->
-    </main>
+
+                <div class="entry-body">
+                    <p class="lead">Maecenas lacinia felis nec placerat sollicitudin. Quisque placerat dolor at scelerisque imperdiet. Phasellus tristique felis dolor.</p>
+                    <p>Maecenas mollis eleifend nisi, eu eleifend arcu condimentum non. Duis convallis ante nec tempus maximus. Fusce malesuada nec velit ut dictum. Morbi faucibus vitae orci et euismod. Integer auctor augue in erat vehicula, quis fermentum elit finibus.</p>
+                    <p>Mauris rhoncus nullam a dui pulvinar, in ornare sapien euismod. Nullam interdum nisi ante, id feugiat quam euismod commodo. Sed ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo, at fermentum turpis. Sed molestie ligula ut molestie ultrices, tellus ligula viverra neque, malesuada consectetur lorem sapien vel urna. Fusce quis eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Ut ridiculus mus.</p>
+
+                    <div class="image-gallery-grid">
+                        <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=500&q=80" alt="Oranges Basket">
+                        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=500&q=80" alt="Sliced Mango">
+                    </div>
+
+                    <p>Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis vehicula ut, vestibulum ut mauris. Nullam non feugiat ex. Duis rutrum rutrum in o nisl. Suspendisse elementum rutrum lorem sed luctus. Proin iaculis euismod metus non sollicitudin. Duis vel luctus lacus. Nullam faucibus iaculis convallis. Nullam ullamcorper nibh ipsum, eget lacinia eros pulvinar a. Integer accumsan arcu nec faucibus ultrices.</p>
+                </div>
+
+                <!-- Promotional Banner -->
+                <div class="promo-banner">
+                    <div class="promo-text">
+                        <p>SUMMER SALE</p>
+                        <h2>Fresh Fruit</h2>
+                        <span class="discount-badge">UP TO <span>56% OFF</span></span>
+                        <a href="#" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Leave a Comment Form -->
+                <div class="comment-form-wrapper">
+                    <h3>Leave a Comment</h3>
+                    <form id="comment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" placeholder="Zakir Hossain" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="zakirsoft.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Write your comment here..."></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="save-info">
+                            <label for="save-info">Save my name and email in this browser for the next time I comment.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post Comments</button>
+                    </form>
+                </div>
+
+                <!-- Comments List -->
+                <div class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment-list">
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="Annette Black">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <strong>Annette Black</strong> • <span>20 Apr, 2021</span>
+                                </div>
+                                <p>In hac habitasse platea dictumst. Sed liquet, lectus ut tincidunt, lorem mi sodales diam, ut aliquet ante ipsum at nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Devon Lane">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <strong>Devon Lane</strong> • <span>24 Apr, 2021</span>
+                                </div>
+                                <p>Quisque feugiat porta leo, facilisis luctus massa vulputate id. In hac habitasse platea dictumst.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="Jacob Jones">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <strong>Jacob Jones</strong> • <span>20 Apr, 2021</span>
+                                </div>
+                                <p>Vivamus hendrerit facilisis pretium. Integer sed massa vel odio ultrices posuere eu vitae felis.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="Jane Cooper">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <strong>Jane Cooper</strong> • <span>2 Apr, 2021</span>
+                                </div>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&q=80" alt="Darrell Steward">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <strong>Darrell Steward</strong> • <span>7 Apr, 2021</span>
+                                </div>
+                                <p>Nullam egestas lacinia ante vel ultrices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Load More</button>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <!-- Search Widget -->
+                <div class="widget search-widget">
+                    <div class="search-input-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Top Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Fresh Fruit <span>(134)</span></a></li>
+                        <li><a href="#">Vegetables <span>(150)</span></a></li>
+                        <li><a href="#">Cooking <span>(54)</span></a></li>
+                        <li><a href="#">Snacks <span>(47)</span></a></li>
+                        <li><a href="#">Beverages <span>(43)</span></a></li>
+                        <li><a href="#">Beauty & Health <span>(38)</span></a></li>
+                        <li><a href="#">Bread & Bakery <span>(15)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tags Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Popular Tag</h3>
+                    <div class="tag-cloud">
+                        <a href="#">Healthy</a>
+                        <a href="#" class="active">Low Fat</a>
+                        <a href="#">Vegetarian</a>
+                        <a href="#">Bread</a>
+                        <a href="#">Kid Foods</a>
+                        <a href="#">Vitamins</a>
+                        <a href="#">Snacks</a>
+                        <a href="#">Tiffin</a>
+                        <a href="#">Meat</a>
+                        <a href="#">Launch</a>
+                        <a href="#">Dinner</a>
+                    </div>
+                </div>
+
+                <!-- Gallery Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Our Gallery</h3>
+                    <div class="gallery-grid">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                    </div>
+                </div>
+
+                <!-- Recently Added Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Recently Added</h3>
+                    <div class="recent-posts">
+                        <div class="recent-item">
+                            <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=150&q=80" alt="Gallery">
+                            <div>
+                                <h4><a href="#">Curabitur porttitor orci eget neque accumsan</a></h4>
+                                <p><i class="fa-regular fa-calendar"></i> Apr 25, 2021</p>
+                            </div>
+                        </div>
+                        <div class="recent-item">
+                            <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=100&q=80" alt="Post">
+                            <div>
+                                <h4><a href="#">Donec magna sollicitudin suscipit viverra</a></h4>
+                                <p><i class="fa-regular fa-calendar"></i> Apr 25, 2021</p>
+                            </div>
+                        </div>
+                        <div class="recent-item">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=100&q=80" alt="Post">
+                            <div>
+                                <h4><a href="#">Quisque tempor urna sed quam mollis</a></h4>
+                                <p><i class="fa-regular fa-calendar"></i> Apr 25, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+</main>
+
+
     <!-- footer section starts here -->
     <footer>
         <div class="container">
@@ -591,4 +658,5 @@
     <!-- our own js file -->
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>

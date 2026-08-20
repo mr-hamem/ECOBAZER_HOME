@@ -26,6 +26,11 @@
 </head>
 
 <body>
+    <!-- preloader starts here -->
+     <div class="preloader">
+
+     </div>
+    <!-- preloader ends here -->
     <!-- header section starts here -->
     <header id="header">
         <div class="headerTop">
@@ -73,17 +78,19 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="cart_part d-flex justify-content-md-end">
-                            <span class="heart"><iconify-icon icon="solar:heart-linear" width="30"
+                            <a href="./wishlist.html" class="text-black-50 pt-1">
+                                <span class="heart"><iconify-icon icon="solar:heart-linear" width="30"
                                     height="30"></iconify-icon></span>
+                            </a>
                             <div class='d-flex'>
                                 <div class="cartCount">
-                                    <span class="cart_bag"><iconify-icon icon="iconamoon:shopping-bag-light" width="29"
-                                            height="29"></iconify-icon></span>
+                                    <a href="./shopping-cart.html" class="text-black-50"><span class="cart_bag"><iconify-icon icon="iconamoon:shopping-bag-light" width="29"
+                                            height="29"></iconify-icon></span></a>
                                     <div class="count">
                                         2
                                     </div>
                                 </div>
-                                <div>
+                                <div class="totalCost">
                                     <p>Shopping Cost:</p>
                                     <h6>$56.00</h6>
                                 </div>
@@ -137,7 +144,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Pages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
@@ -204,7 +211,7 @@
                             <li class="nav-items"><a href="shop_1.html" class="nav-link">Shops</a></li>
                             <li class="nav-items"><a href="#" class="nav-link">Pages</a></li>
                             <li class="nav-items"><a href="./about.html" class="nav-link">About</a></li>
-                            <li class="nav-items"><a href="#" class="nav-link">Contact Us</a></li>
+                            <li class="nav-items"><a href="./contact-us.html" class="nav-link">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -391,7 +398,7 @@
             <div class="container">
                 <div class='heading'>
                     <h2>Feature Product</h2>
-                    <img src="./assets/img/Line.png" alt="" class="img-fluid">
+                    <img src="./assets/img/Line.png" alt="">
                 </div>
                 <div class="featureSlider">
                     <div class="px-2">
@@ -894,54 +901,54 @@
             <div class="container">
                 <div class='heading'>
                     <h2>Top Category</h2>
-                    <img src="./assets/img/Line.png" alt="" class="img-fluid">
+                    <img src="./assets/img/Line.png" alt="">
                 </div>
                 <div class="top_cat_slider">
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/Vegetable.png" class="img-fluid" alt="">
+                            <img src="./assets/img/Vegetable.png" class="" alt="">
                             <h6>Vegetable</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/fruits.png" class="img-fluid" alt="">
+                            <img src="./assets/img/fruits.png" alt="">
                             <h6>Fresh Fruits</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/fish.png" class="img-fluid" alt="">
+                            <img src="./assets/img/fish.png" alt="">
                             <h6>River Fish</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/meat.png" class="img-fluid" alt="">
+                            <img src="./assets/img/meat.png" alt="">
                             <h6>Meat</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/soft-drink.png" class="img-fluid" alt="">
+                            <img src="./assets/img/soft-drink.png" alt="">
                             <h6>Water and Drinks</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/meat.png" class="img-fluid" alt="">
+                            <img src="./assets/img/meat.png" alt="">
                             <h6>Meat</h6>
                             <p>165 Products</p>
                         </a>
                     </div>
                     <div class="top_cat_slider_cnt">
                         <a href="#">
-                            <img src="./assets/img/Vegetable.png" class="img-fluid" alt="">
+                            <img src="./assets/img/Vegetable.png" alt="">
                             <h6>Vegetable</h6>
                             <p>165 Products</p>
                         </a>
@@ -992,7 +999,7 @@
                         <img src="./assets/img/Line.png" alt="">
                     </div>
                     <div class="col-lg-2 col-md-4 text-md-end">
-                        <a href="#">View All Products <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></a>
+                        <a href="./shop_1.html">View All Products <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></a>
                     </div>
                 </div>
                 <div class="row">
@@ -1139,7 +1146,7 @@
                 </div>
                 <div class="clientsReviewSlider">
                     <div class="clientsReviewCnt">
-                        <img src="./assets/img/semicolon.png" class="img-fluid" alt="">
+                        <img src="./assets/img/semicolon.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa ex cum, nihil maxime
                             eligendi dolore, error provident, expedita delectus vitae saepe! Assumenda, dolorum alias.
                         </p>
@@ -1169,7 +1176,7 @@
                         </div>
                     </div>
                     <div class="clientsReviewCnt">
-                        <img src="./assets/img/semicolon.png" class="img-fluid" alt="">
+                        <img src="./assets/img/semicolon.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa ex cum, nihil maxime
                             eligendi dolore, error provident, expedita delectus vitae saepe! Assumenda, dolorum alias.
                         </p>
@@ -1199,7 +1206,7 @@
                         </div>
                     </div>
                     <div class="clientsReviewCnt">
-                        <img src="./assets/img/semicolon.png" class="img-fluid" alt="">
+                        <img src="./assets/img/semicolon.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et nemo nobis veritatis
                             quae, molestiae odit ipsum quos! Sunt, hic quia ullam labore perferendis aspernatur!</p>
                         <div class="row clientsMain">
@@ -1228,7 +1235,7 @@
                         </div>
                     </div>
                     <div class="clientsReviewCnt">
-                        <img src="./assets/img/semicolon.png" class="img-fluid" alt="">
+                        <img src="./assets/img/semicolon.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et nemo nobis veritatis
                             quae, molestiae odit ipsum quos! Sunt, hic quia ullam labore perferendis aspernatur!</p>
                         <div class="row clientsMain">
@@ -1257,7 +1264,7 @@
                         </div>
                     </div>
                     <div class="clientsReviewCnt">
-                        <img src="./assets/img/semicolon.png" class="img-fluid" alt="">
+                        <img src="./assets/img/semicolon.png" alt="">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, nam. Quisquam distinctio hic
                             reprehenderit laudantium, dicta nemo aspernatur aliquid molestiae repudiandae rerum deleniti
                             officiis adipisci.</p>
@@ -1493,7 +1500,7 @@
                     <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
                 </div>
                 <div class="col-lg-4 d-lg-flex justify-content-lg-end">
-                    <img src="./assets/img/Payment Method.png" class="img-fluid payment_img" alt="">
+                    <img src="./assets/img/Payment Method.png" class="payment_img" alt="">
                 </div>
             </div>
         </div>

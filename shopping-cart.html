@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecobazar - Home</title>
+    <title>Ecobazar - Shopping Cart</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +65,10 @@
                     </div>
                     <div class="col-lg-2 col-md-3">
                         <div class="cart_part d-flex justify-content-md-end">
-                            <span class="heart"><iconify-icon icon="solar:heart-linear" width="30" height="30"></iconify-icon></span>
+                            <a href="./wishlist.html" class="text-black-50 pt-1">
+                                <span class="heart"><iconify-icon icon="solar:heart-linear" width="30"
+                                    height="30"></iconify-icon></span>
+                            </a>
                             <div class='d-flex'>
                                 <div class="cartCount">
                                     <span class="cart_bag"><iconify-icon icon="iconamoon:shopping-bag-light" width="29" height="29"></iconify-icon></span>
@@ -73,7 +76,10 @@
                                         2     
                                     </div> 
                                 </div>
-                                <div><p>Shopping Cost:</p> <h6>$56.00</h6></div>
+                                 <div class="totalCost">
+                                    <p>Shopping Cost:</p>
+                                    <h6>$56.00</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -463,7 +469,7 @@
                 <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
             </div>
             <div class="col-lg-4 d-lg-flex justify-content-lg-end">
-                <img src="./assets/img/Payment Method.png" class="img-fluid payment_img" alt="">
+                <img src="./assets/img/Payment Method.png" class="payment_img" alt="">
             </div>
         </div>
     </div>
