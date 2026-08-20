@@ -171,17 +171,53 @@ $(document).ready(function () {
     focusOnSelect: true
 });
 });
-// // preloader section js starts here (1)
-// window.onload = () => {
-//   document.querySelector('.preloader').style.opacity = '0';
-//   setTimeout(() => {
-//     document.querySelector('.preloader').remove();
-//   }, 400);
-// };
-// // preloader section js ends here (1)
-// products view slick slider starts here
+document.addEventListener('DOMContentLoaded', () => {
+    // Quantity Increment and Decrement Logic
+    const quantityControls = document.querySelectorAll('.quantity-control');
 
-// products view slick slider ends here
-// product page increment and decrement button js starts here
+    quantityControls.forEach(control => {
+        const minusBtn = control.querySelector('.btn-minus');
+        const plusBtn = control.querySelector('.btn-plus');
+        const input = control.querySelector('input');
 
-// product page increment and decrement button js ends here
+        minusBtn.addEventListener('click', () => {
+            let currentValue = parseInt(input.value) || 1;
+            if (currentValue > 1) {
+                input.value = currentValue - 1;
+            }
+        });
+
+        plusBtn.addEventListener('click', () => {
+            let currentValue = parseInt(input.value) || 1;
+            input.value = currentValue + 1;
+        });
+    });
+
+    // Remove Item Row
+    const removeButtons = document.querySelectorAll('.remove-btn');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const row = e.target.closest('tr');
+            if (row) {
+                row.remove();
+            }
+        });
+    });
+
+    // Coupon Form Handler
+    const couponForm = document.getElementById('coupon-form');
+    if (couponForm) {
+        couponForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Coupon code applied successfully, sir!');
+            couponForm.reset();
+        });
+    }
+// preloader section js starts here (1)
+window.onload = () => {
+  document.querySelector('.preloader').style.opacity = '0';
+  setTimeout(() => {
+    document.querySelector('.preloader').remove();
+  }, 400);
+};
+// preloader section js ends here (1)
