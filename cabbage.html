@@ -136,7 +136,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Pages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -352,7 +352,7 @@
                             <div class="col-lg-6 col-12">
                                 <div class="brand_img d-flex justify-content-center align-items-center">
                                     <span>Brand: </span>
-                                    <img src="./assets/img/productBrand.png" class="img-fluid" alt="">
+                                    <img src="./assets/img/productBrand.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
@@ -374,10 +374,10 @@
                         </div>
                         <div class="row place_order">
                             <div class="col-lg-3 col-4">
-                                <div class="increase_decrease_btn">
-                                    <button class="productDescription_decrement">-</button>
-                                    <input type="number" value="1">
-                                    <button class="productDescription_increment">+</button>
+                                <div class="increase_decrease_btn quantity-control">
+                                    <button class="btn-minus" type="button" aria-label="Decrease quantity">-</button>
+                                    <input type="number" value="1" min="1" aria-label="Quantity">
+                                    <button class="btn-plus" type="button" aria-label="Increase quantity">+</button>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-5 productDescription_addTocart">

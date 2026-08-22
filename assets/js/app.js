@@ -181,14 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = control.querySelector('input');
 
     minusBtn.addEventListener('click', () => {
-      let currentValue = parseInt(input.value) || 1;
-      if (currentValue > 1) {
-        input.value = currentValue - 1;
-      }
+      const currentValue = Math.max(parseInt(input.value, 10) || 1, 1);
+      input.value = Math.max(currentValue - 1, 1);
     });
 
     plusBtn.addEventListener('click', () => {
-      let currentValue = parseInt(input.value) || 1;
+      const currentValue = Math.max(parseInt(input.value, 10) || 1, 1);
       input.value = currentValue + 1;
     });
   });
@@ -214,13 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   // preloader js starts here
-window.addEventListener("load", function () {
-  const preloader = document.getElementById("preloader");
-  preloader.style.transition = "opacity 0.5s ease";
-  preloader.style.opacity = "0";
-  
-  setTimeout(() => {
-    preloader.style.display = "none";
-  }, 500);
-});
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.transition = "opacity 0.5s ease";
+    preloader.style.opacity = "0";
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 500);
+  });
 });
